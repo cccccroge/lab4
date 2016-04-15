@@ -1,0 +1,15 @@
+A.
+0000000000400555 T main
+000000000040052d T _Z7averageif
+00000000004004ed T _Z7averagePdRd
+
+B.
+output:
+1	8
+4	8
+4	8
+8	8
+reason:
+範例中不同資料型別分別各佔1、4、4、8bytes，但他們的指標是指向以8bytes儲存的
+記憶體空間，所以皆佔8bytes
+
